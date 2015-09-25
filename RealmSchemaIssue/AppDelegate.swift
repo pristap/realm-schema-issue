@@ -15,7 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        
+        var newEntry: KXEntry?
+        
+        repeat {
+            
+            let randomWordLength = Int(arc4random_uniform(4) + 3)
+            print("length: \(randomWordLength)")
+            newEntry = KXRealm.Manager.getRandomEntry(language: "en", length: randomWordLength)
+            
+        } while newEntry == nil
+        
+        print(newEntry.debugDescription)
+
         return true
     }
 

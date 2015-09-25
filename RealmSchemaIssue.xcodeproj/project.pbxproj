@@ -14,6 +14,10 @@
 		CC4BC5BF1BB5936600401058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4BC5BD1BB5936600401058 /* LaunchScreen.storyboard */; };
 		CC4BC5CA1BB5936600401058 /* RealmSchemaIssueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BC5C91BB5936600401058 /* RealmSchemaIssueTests.swift */; };
 		CC4BC5D51BB5936600401058 /* RealmSchemaIssueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BC5D41BB5936600401058 /* RealmSchemaIssueUITests.swift */; };
+		CC4BC5E31BB5950C00401058 /* KXRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BC5E21BB5950C00401058 /* KXRealm.swift */; settings = {ASSET_TAGS = (); }; };
+		CC4BC5E61BB5951F00401058 /* KXEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BC5E41BB5951F00401058 /* KXEntry.swift */; settings = {ASSET_TAGS = (); }; };
+		CC4BC5E71BB5951F00401058 /* KXEntryStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BC5E51BB5951F00401058 /* KXEntryStats.swift */; settings = {ASSET_TAGS = (); }; };
+		CC4BC5E91BB595AD00401058 /* Words in Resources */ = {isa = PBXBuildFile; fileRef = CC4BC5E81BB595AD00401058 /* Words */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		CC4BC5D01BB5936600401058 /* RealmSchemaIssueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmSchemaIssueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4BC5D41BB5936600401058 /* RealmSchemaIssueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSchemaIssueUITests.swift; sourceTree = "<group>"; };
 		CC4BC5D61BB5936600401058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4BC5E21BB5950C00401058 /* KXRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KXRealm.swift; sourceTree = "<group>"; };
+		CC4BC5E41BB5951F00401058 /* KXEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KXEntry.swift; sourceTree = "<group>"; };
+		CC4BC5E51BB5951F00401058 /* KXEntryStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KXEntryStats.swift; sourceTree = "<group>"; };
+		CC4BC5E81BB595AD00401058 /* Words */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Words; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 		CC4BC5B31BB5936600401058 /* RealmSchemaIssue */ = {
 			isa = PBXGroup;
 			children = (
+				CC4BC5E81BB595AD00401058 /* Words */,
+				CC4BC5E21BB5950C00401058 /* KXRealm.swift */,
+				CC4BC5E41BB5951F00401058 /* KXEntry.swift */,
+				CC4BC5E51BB5951F00401058 /* KXEntryStats.swift */,
 				CC4BC5B41BB5936600401058 /* AppDelegate.swift */,
 				CC4BC5B61BB5936600401058 /* ViewController.swift */,
 				CC4BC5B81BB5936600401058 /* Main.storyboard */,
@@ -228,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC4BC5E91BB595AD00401058 /* Words in Resources */,
 				CC4BC5BF1BB5936600401058 /* LaunchScreen.storyboard in Resources */,
 				CC4BC5BC1BB5936600401058 /* Assets.xcassets in Resources */,
 				CC4BC5BA1BB5936600401058 /* Main.storyboard in Resources */,
@@ -255,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC4BC5E31BB5950C00401058 /* KXRealm.swift in Sources */,
+				CC4BC5E61BB5951F00401058 /* KXEntry.swift in Sources */,
 				CC4BC5B71BB5936600401058 /* ViewController.swift in Sources */,
+				CC4BC5E71BB5951F00401058 /* KXEntryStats.swift in Sources */,
 				CC4BC5B51BB5936600401058 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +497,7 @@
 				CC4BC5DB1BB5936600401058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC4BC5DC1BB5936600401058 /* Build configuration list for PBXNativeTarget "RealmSchemaIssueTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +506,7 @@
 				CC4BC5DE1BB5936600401058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC4BC5DF1BB5936600401058 /* Build configuration list for PBXNativeTarget "RealmSchemaIssueUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +515,7 @@
 				CC4BC5E11BB5936600401058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
